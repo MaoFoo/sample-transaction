@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Sample transaction - app</title>
+  <meta Name="author" content="Maksim M; mv-d404@w//eb/s/o/v/e/t/.r//u/; Sorry, but this is antispam">
+  <link rel="stylesheet" type="text/css" href="style.css?392" />
+  <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script  src="app.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header-bar">
+      <span class="logo">Cats</span>
+      <div class="logout" onclick="app.logout();">Выход</div>
+    </div>
+    <div class="app-content">
+      <!-- -->
+      <div class="accaunts-stage">
+        <h1>Пожалуйста, авторизуйтесь с помощью предзаданных аккаунтов</h1>
+        <div class="accaunts-list"></div>
+      </div>
+      <!-- -->
+
+      <!-- -->
+      <div class="tasks-stage">
+        <div class="user-bar">
+          <div class="name"></div>
+          <div class="balance" onclick="app.transactionsHistory();"></div>
+        </div>
+
+        <div class="tabs">
+          <div class="available" onclick="app.taskSelectTab('available');">Доступные задачи</div>
+          <div class="my" onclick="app.taskSelectTab('my');">Мои задачи</div>
+          <div class="create" onclick="app.taskSelectTab('create');">Создать</div>
+        </div>
+        <div class="task-content">
+          <!-- -->
+          <div class="task-add">
+            <h1>Создание задачи</h1>
+            <label>
+              Наименование задачи
+              <input name="task-name">
+            </label>
+            <label>
+              Стоимость
+              <input name="task-price">
+            </label>
+            <div class="error-box"></div>
+            <div class="complete-box"></div>
+            <button onclick="app.taskCreate();">Создать</button>
+          </div>
+          <!-- -->
+          <div class="task-list">
+          </div>
+          <!-- -->
+          <div class="task-view">
+            <div class="info"></div>
+            <div class="error-box"></div>
+            <div class="complete-box"></div>
+            <button onclick="app.taskExecute(this);">Выполнить</button>
+          </div>
+          <!-- -->
+          <div class="transactions-history">
+
+          </div>
+          <!-- -->
+        </div>
+      </div>
+      <!-- -->
+
+
+
+    </div>
+  </div>
+</body>

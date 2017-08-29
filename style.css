@@ -1,0 +1,325 @@
+body{
+  margin:0;
+  padding: 0;
+  border: 0;
+  background: #eeeeec;
+  font-family: Tahoma, Helvetica;
+  font-size: 14px;
+}
+
+.wrapper{
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: white;
+}
+.wrapper .header-bar{
+  background-color: #204a87;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 14px;
+}
+.wrapper .header-bar .logo{
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.wrapper .header-bar .logout{
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+h1{
+  font-size: 14px;
+  margin: 16px 11px;
+  font-weight: bold;
+  color: #6f6f6f;
+  text-align: center;
+}
+input{
+  padding: 7px;
+  border: 1px solid #dfdfdf;
+  font-size: 15px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+input:focus,
+button:focus {
+  outline:0;
+}
+label{
+  color: gray;
+  line-height: 180%;
+  font-size: 13px;
+}
+button{
+  background: #204a87;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  padding: 7px 11px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.error-box{
+  margin: 10px 0;
+  border: 1px solid #c70202;
+  background-color: #ffe2e2;
+  color: #c70202;
+  padding: 10px;
+  font-size: 13px;
+}
+.error-box:empty{
+  display:none;
+}
+.complete-box{
+  margin: 10px 0;
+  border: 1px solid #03924b;
+  background-color: #e3f9ef;
+  color: #03924b;
+  padding: 10px;
+  font-size: 13px;
+}
+.complete-box:empty{
+  display:none;
+}
+
+.app-content{
+  padding-bottom: 20px;
+}
+.app-content > div{
+  display: none;
+}
+
+.accaunts-stage .accaunts-list > div{
+  padding: 5px 10px;
+  margin: 10px 10px 0 10px;
+  border: 1px solid #dededd;
+  background: #f9f9f9;
+  cursor: pointer;
+  line-height: 60px;
+}
+.accaunts-stage .accaunts-list > div img{
+  width: 60px;
+  border-radius: 60px;
+  float: left;
+  margin-right: 10px;
+}
+.accaunts-stage .accaunts-list > div .balance{
+  float: right;
+  color: #adadad;
+  font-size: 12px;
+  line-height: 60px;
+}
+.accaunts-stage .accaunts-list > div .balance:before {
+    content: "Баланс: ";
+}
+
+
+
+.tasks-stage .user-bar {
+  background-color: #f1f7ff;
+  color: #6d7b8e;
+  padding: 10px 14px;
+  border-bottom: 1px solid #a7bcd8;
+}
+.tasks-stage .user-bar:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.tasks-stage .user-bar .name{
+  float:left;
+}
+.tasks-stage .user-bar .balance{
+  float: right;
+  text-decoration: underline;/*иначе не понятно будет, что баланс кликабельный*/
+}
+.tasks-stage .user-bar .balance:before{
+  content: "Баланс: ";
+}
+
+
+.tasks-stage .tabs {
+    margin-top: 10px;
+    border-bottom: 1px solid #204a87;
+}
+.tasks-stage .tabs:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.tasks-stage .tabs > div{
+  float: left;
+  padding: 5px 7px;
+  margin-left: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  color: #204a87;
+}
+.tasks-stage .tabs > div.create{
+  float: right;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+.tasks-stage .tabs > div.selected{
+  background-color: #204a87;
+  color: white;
+}
+
+.tasks-stage .task-content > div{
+  display: none;
+}
+.tasks-stage .task-content .task-add{
+  margin: 10px;
+}
+.tasks-stage .task-content .task-list > div{
+  padding: 10px;
+  margin: 10px 10px 0 10px;
+  border: 1px solid #dededd;
+  background: #f9f9f9;
+  line-height: 100%;
+}
+.tasks-stage .task-content .task-list > div img{
+  width: 50px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 5px;
+  float:left;
+}
+.tasks-stage .task-content .task-list > div .owner{
+  font-weight: bold;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+.tasks-stage .task-content .task-list > div .price{
+  float:right;
+  font-weight: bold;
+  color: #4f2f58;
+}
+.tasks-stage .task-content .task-list > div .date{
+  font-size: 11px;
+  color: gray;
+}
+.tasks-stage .task-content .task-list > div .name{
+  line-height: 150%;
+}
+
+
+.tasks-stage .task-content .task-list > div.empty-list{
+  text-align:center;
+  padding: 40px 10px;
+  color: gray;
+}
+
+
+.tasks-stage .task-content .task-view {
+  padding: 10px;
+}
+.tasks-stage .task-content .task-view .info{
+  margin-bottom:20px;
+}
+.tasks-stage .task-content .task-view .info img{
+  width: 60px;
+  border-radius: 60px;
+  float: left;
+  margin-right: 10px;
+  float:left;
+}
+.tasks-stage .task-content .task-view .info .owner{
+  font-weight: bold;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+.tasks-stage .task-content .task-view .info .price{
+  float:right;
+  font-weight: bold;
+  color: #4f2f58;
+}
+.tasks-stage .task-content .task-view .info .date{
+  font-size: 11px;
+  color: gray;
+}
+.tasks-stage .task-content .task-view .info .name{
+  line-height: 150%;
+}
+
+
+
+
+
+.tasks-stage .task-content .transactions-history .item{
+  border-bottom: 1px solid #dededd;
+  padding: 10px;
+}
+.tasks-stage .task-content .transactions-history .item .line{
+  background: #f5f4f4;
+  padding: 4px;
+  border-radius: 4px;
+}
+.tasks-stage .task-content .transactions-history .item .line:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.tasks-stage .task-content .transactions-history .item .price{
+  width: 54px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 11px;
+  float: left;
+  margin-right: 10px;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+}
+.tasks-stage .task-content .transactions-history .item .price.green{
+  background-color: #c2e1c2;
+  color: #016101;
+}
+.tasks-stage .task-content .transactions-history .item .price.red{
+  background-color: #ffc9c9;
+  color: #c30101;
+}
+
+.tasks-stage .task-content .transactions-history .item .user{
+  line-height: 30px;
+  float: left;
+  color: #737272;
+}
+.tasks-stage .task-content .transactions-history .item .user div.img{
+  width: 30px;
+  height: 30px;
+  background-size: 50px;
+  background-position: center;
+  border-radius: 30px;
+  margin-right: 5px;
+  float: left;
+}
+.tasks-stage .task-content .transactions-history .item .task-name{
+  padding: 10px 0 10px 0;
+}
+
+.tasks-stage .task-content .transactions-history .item .date{
+  color: gray;
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: -5px;
+}
+
+.tasks-stage .task-content .transactions-history .empty-list{
+  margin: 10px 10px 0 10px;
+  border: 1px solid #dededd;
+  background: #f9f9f9;
+  line-height: 100%;
+  text-align:center;
+  padding: 40px 10px;
+  color: gray;
+}
