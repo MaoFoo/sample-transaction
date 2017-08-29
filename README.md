@@ -35,9 +35,10 @@ Live demo: http://poligon.websovet.ru/sample-transaction/
 
 Для запуска:
 - Скопировать в web-директорию в папку /sample-transaction/
-- Импортнуть базу /app/cw76594_poligon.sql
+- Импортнуть базу /app/cw76594_poligon.sql и поменять доступ к бд в index.php
 - ??
 - Profit
 
 
 Спасибо за внимание.
+:alarm_clock: 23h :man_with_turban: 1
